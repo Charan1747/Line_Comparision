@@ -33,11 +33,11 @@ namespace LineComparisionProblems
             lobject.CalCulate(lobject.X1, lobject.X2, lobject.Y1, lobject.Y2);
             double Length_of_Second_Line = lobject.Length;
 
-            if (Length_of_First_Line == Length_of_Second_Line)
+            if (Length_of_First_Line.CompareTo(Length_of_Second_Line) == 0)
             {
                 Console.WriteLine("Two lines are Equal");
             }
-            else if (Length_of_First_Line > Length_of_Second_Line)
+            else if (Length_of_First_Line.CompareTo(Length_of_Second_Line) > 0)
             {
                 Console.WriteLine("The First line is Greater than Second line");
             }
